@@ -7,7 +7,7 @@ import android.os.Bundle;
  * Created by MyPC on 1/12/2017.
  */
 
-public class DialogActivity extends Activity{
+public class DialogActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -8,9 +8,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    private final String TAG=getClass().getSimpleName();
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private final String TAG = getClass().getSimpleName();
     private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,18 +58,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.button:
                 buttonClickDialog();
                 break;
         }
     }
 
-    private void buttonClick(){
+    private void buttonClick() {
         button.setOnClickListener(this);
     }
+
     private void buttonClickDialog() {
-        Intent intent = new Intent(MainActivity.this,DialogActivity.class);
+        Intent intent = new Intent(MainActivity.this, DialogActivity.class);
         startActivity(intent);
     }
 }
